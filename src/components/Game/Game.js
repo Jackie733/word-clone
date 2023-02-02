@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
-import GuessInput from '../GuessInput/GuessInput';
-import GuessResults from '../GuessResults/GuessResults';
+import GuessInput from '../GuessInput';
+import GuessResults from '../GuessResults';
 import { sample } from '../../utils';
 import { WORDS } from '../../data';
 
