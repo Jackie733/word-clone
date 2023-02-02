@@ -7,8 +7,12 @@ function GuessResults({ guessList, answer }) {
   return (
     <div className="guess-results">
       {range(NUM_OF_GUESSES_ALLOWED).map((i) => (
-        <Guess key={crypto.randomUUID()} answer={answer} guess={guessList[i]} />
-      ))}      
+        <Guess
+          key={crypto.randomUUID()}
+          answer={answer}
+          guess={guessList[i]} 
+        />
+      ))}
     </div>
   )
 }

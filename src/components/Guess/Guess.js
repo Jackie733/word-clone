@@ -8,7 +8,7 @@ function Guess({ guess, answer }) {
   return (
     <p className="guess">
       {range(5).map((i) => (
-        <span className={`cell ${results ? results[i].status : undefined}`}>
+        <span key={crypto.randomUUID()} className={`cell ${results ? results[i].status : undefined}`}>
           {results ? results[i].letter : undefined}
         </span>
       ))}
