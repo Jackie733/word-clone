@@ -24,6 +24,8 @@ function VisualKeyboard({ guessList, answer }) {
         })
       })
       setLetterInfo(result);
+    } else {
+      setLetterInfo(new Map());
     }
   }, [guessList, answer])
 

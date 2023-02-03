@@ -273,3 +273,12 @@ h1 {
   color: white;
   background-color: hsl(200, 2%, 48%);
 }
+
+.restart-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.restart-btn:hover {
+  text-decoration: none;
+}
