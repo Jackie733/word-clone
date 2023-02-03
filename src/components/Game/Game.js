@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import GuessInput from '../GuessInput';
 import GuessResults from '../GuessResults';
+import VisualKeyboard from '../VisualKeyboard';
 import Banner from '../Banner';
 import { sample } from '../../utils';
 import { WORDS } from '../../data';
@@ -34,6 +35,7 @@ function Game() {
     <>
       <GuessResults guessList={guessList} answer={answer} />
       <GuessInput onSubmit={handleSubmit} status={endStatus} />
+      <VisualKeyboard guessList={guessList} answer={answer} />
       <Banner status={endStatus} />
     </>
   )
